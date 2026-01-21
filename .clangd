@@ -1,0 +1,29 @@
+CompileFlags:
+  Add: [
+    "-fsyntax-only"
+  ]
+  Remove: [
+    "-mabi=*",
+    "-march=*",
+    "-mtune=*",
+    "-G*",
+    "-ffile-prefix-map=*",
+    "-fdiagnostics-color=*",
+    "-ftrivial-auto-var-init=*",
+    "-Wa,*",
+    "-Wl,*",
+    "--wrap",
+    "-T*",
+    "--gc-sections"
+  ]
+
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Ignore
+
+Index:
+  Background: Build
+
+Completion:
+  AllScopes: true
+
