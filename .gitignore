@@ -1,6 +1,15 @@
-build
-filesystem
+.directory
+build/
+filesystem/
 *.z64
-*.pak
-*.eeprom
+.vscode/
+.idea/
+
+# Blender backup files
+*.blend[0-9]
+
 .DS_Store
+# IDE files
+cmake-*
+.idea
+CMakeLists.txt
